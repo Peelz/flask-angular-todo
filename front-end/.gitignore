@@ -48,3 +48,4 @@ Thumbs.db
 #build package
 mbs-common-test-v1.js
 # /mbs-templates/*
+package-lock.json
