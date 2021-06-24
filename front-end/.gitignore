@@ -44,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+#build package
+mbs-common-test-v1.js
+# /mbs-templates/*
