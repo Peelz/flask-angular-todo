@@ -1,0 +1,20 @@
+{
+    "/api_bu/*": {
+        "target": "http://10.150.52.153:8182/",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    },
+    "/api/*": {
+        "target": "http://localhost:8181/",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    },
+    "*": {
+        "target": "http://127.0.0.1:5000/",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    }
+}

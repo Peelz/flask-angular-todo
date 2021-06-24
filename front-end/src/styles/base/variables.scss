@@ -1,0 +1,53 @@
+
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import '../../../node_modules/bootstrap/scss/variables';
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+// change variable of boostrap
+$font-family-base : 'TISCO-FONT', sans-serif;
+$font-size-base : 1.4rem;
+
+$spacer : 16px;
+
+$h6-font-size : 1em;
+$h1-font-size : $h6-font-size * 2.5;
+$h2-font-size : $h6-font-size * 2;
+$h3-font-size : $h6-font-size * 1.75;
+$h4-font-size : $h6-font-size * 1.5;
+$h5-font-size : $h6-font-size * 1.25;
+$btn-font-size : 1em;
+$btn-padding-y : 0.375em;
+$btn-padding-x : 0.75em;
+$input-font-size : 1em;
+$dropdown-font-size : 1em;
+
+$label-margin-bottom : 8px;
+$form-group-margin-bottom : 16px;
+
+$card-spacer-y : 16px;
+$card-spacer-x : 24px;
+
+$theme-colors : (
+    "primary" : #58748B
+);
+
+$pagination-active-bg : map-get($theme-colors,'primary');
+$pagination-active-border-color : map-get($theme-colors,'primary');
+
+@import "../../../node_modules/bootstrap";
+
+:root{
+    --app-primary-rgb-value : 88, 116, 139;
+    --app-primary-line-color : #dfdfdf;
+    --app-highlight-text-color : yellow;
+    --app-primary-icon-color : #5a5a5a;
+    --app-primary-icon-rgb-value : 90,90,90;
+    --app-hover-item-background-color : rgba(var(--app-primary-rgb-value),0.1);
+    --app-unread-notification-background-color : rgba(var(--app-primary-rgb-value), 0.15);
+
+    --disabled-background-color : #e8e8e8;
+    --disabled-border-color : #d6d6d6;
+    --disabled-font-color : #949292;
+    
+}

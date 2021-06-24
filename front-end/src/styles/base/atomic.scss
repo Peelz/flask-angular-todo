@@ -1,0 +1,51 @@
+
+[tc-scroll~=y]{
+    overflow-x:hidden;
+	overflow-y: auto !important;
+	-webkit-overflow-scrolling: touch !important;
+}
+
+[tc-scroll~=x]{
+    overflow-y:hidden;
+	overflow-x: auto !important;
+	-webkit-overflow-scrolling: touch !important;
+}
+
+[tc-scroll~=xy],
+[tc-scroll~=yx]{
+	overflow: scroll !important;
+	-webkit-overflow-scrolling: touch !important;
+}
+
+    [tc-scroll] > *  {
+        @include transform(translateZ(0px) !important);
+    }
+
+[tc-text-overflow="1"]{
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+
+[tc-text-overflow="2"],
+[tc-text-overflow="3"],
+[tc-text-overflow="4"]{
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;    
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--number-of-line);
+}
+
+[tc-text-overflow="2"]{
+    --number-of-line : 2;
+}
+
+[tc-text-overflow="3"]{
+    --number-of-line : 3;
+}
+
+[tc-text-overflow="4"]{
+    --number-of-line : 4;
+}

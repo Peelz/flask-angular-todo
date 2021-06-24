@@ -1,0 +1,33 @@
+.tc-animate-infinite{
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes tc-pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+} 
+
+@keyframes tc-pulse { 
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+} 
+
+.tc-pulse { 
+    -webkit-animation-name: tc-pulse;
+    animation-name: tc-pulse;
+}

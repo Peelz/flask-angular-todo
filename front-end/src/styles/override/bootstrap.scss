@@ -1,0 +1,110 @@
+
+.form-group{
+    position: relative;
+
+    i{
+        color: rgba(var(--app-primary-icon-rgb-value),0.5);
+    }
+
+    .start,
+    .end{
+        position: absolute;       
+        height: $input-height;
+        padding: $input-padding-y $input-padding-x;
+
+        &.enabled{
+            cursor: pointer;
+            i{
+                color : var(--app-primary-icon-color);
+            }
+        }
+    }
+
+    .start{
+        left: 0px;
+
+        ~ input{
+            padding-left: $input-padding-x*2 + 1.4rem;
+        }
+    }
+
+    .end{
+        right: 0px;
+
+        ~ input{
+            padding-right: $input-padding-x*2 + 1.4rem;
+        }
+    }
+
+    .btn-group{
+        display: block;
+
+        > .btn{
+            padding: $input-padding-y $input-padding-x;
+            vertical-align: baseline;
+            min-width: 50px;
+            margin-bottom: 0px;
+        }
+    }
+
+    tc-toggle{
+        display: block;
+    }
+
+    timepicker{
+        display: block;
+    }
+
+    tc-checkbox {
+        display: block;
+        padding: $input-padding-y 0px;
+    }
+
+    .symbol {
+        &.required:before{
+            content: "*";
+            display: inline;
+            color: var(--red);
+        }
+    }
+
+}
+
+.modal-backdrop{
+    + .modal-backdrop{
+        visibility: hidden;
+    }
+}
+
+.modal{
+
+    .modal-header{
+        padding: 0px 0px 16px;
+        // margin: 16px 24px;
+
+        + .modal-body,
+        ~ .modal-footer{
+            margin-top: 0px;
+        }
+    }
+
+    .modal-body{
+        padding: 0px 24px;
+        margin: 16px 0px;
+
+        + .modal-footer{
+            margin-top: 0px;
+        }
+    }
+
+    .modal-footer{
+        border-top:none;
+        padding: 0px 24px;
+        margin: 16px 0px;
+    }
+
+}
+
+bs-datepicker-container{
+    z-index: 2000;
+}

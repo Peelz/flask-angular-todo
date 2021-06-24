@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import './styles/base/mixins.scss';
+@import './styles/base/app.scss';
+@import './styles/base/variables.scss';
+@import './styles/base/theme1.scss';
+// @import './styles/base/atomic.scss';
+// @import './styles/base/layout.scss';
+// @import './styles/base/animate.scss';
+// @import './styles/override/bootstrap.scss';
+// @import './styles/override/ng-pick-datetime.scss';
+@import './styles/components/scrollbar.scss';
+@import '~ngx-ui-switch/ui-switch.component.scss';

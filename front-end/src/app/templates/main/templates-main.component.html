@@ -1,0 +1,3 @@
+
+<mbs-templates-search *ngIf="template?.configuration && template?.currentPage==='search'" [(template)]="template" [rootHtmlElement]="rootHtmlElement" [launcherHttpClient]="launcherHttpClient" [loaderService]="loaderService" (flow)="flowSender($event)"></mbs-templates-search>
+<mbs-templates-view *ngIf="template?.configuration && template?.currentPage==='view'" [(template)]="template" [rootHtmlElement]="rootHtmlElement" [launcherHttpClient]="launcherHttpClient" [loaderService]="loaderService" (flow)="flowSender($event)"></mbs-templates-view>

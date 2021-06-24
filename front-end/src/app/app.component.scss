@@ -1,0 +1,13 @@
+@import '../styles/base/theme1.scss';
+
+.widget-wrapper{
+    padding: 16px;
+    margin: 16px;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+};
+
+.card-header{
+    background-color:$theme-1-header-panel-background;
+    color: $theme-1-header-panel-text;
+}

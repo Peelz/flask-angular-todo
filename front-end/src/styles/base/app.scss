@@ -1,0 +1,49 @@
+html,
+body,
+app-root,
+.tc-page-container{
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+app-root{
+    display: block;
+}
+
+.tc-page-container{
+    display: block;
+    > * {
+        height: 100%;
+        width: 100%;
+    }
+}
+.mbs-multi-select .dropdown-list {
+  position: relative !important;
+}
+[tc-font-size="small"]{
+    font-size: 0.875em;
+}
+
+.text-title {
+    font-size: 12px;
+    color: grey;
+}
+
+// mbs-widget-table {
+//     font-weight: normal !important;
+//     .font-weight-bold {
+//         font-weight: normal !important;
+//     }
+// }
+
+// .flag-complete p {
+//     background-color: #73a189;
+//     color: #fff;
+//     text-align: center;
+//     border-radius: 5px;
+//     padding: 1px;
+// }

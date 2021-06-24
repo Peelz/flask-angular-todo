@@ -1,0 +1,6 @@
+@import "../../../styles/base/theme1.scss";
+
+.card-header.default {
+    background-color: $theme-1-header-panel-background;
+    color: $theme-1-header-panel-text;
+}

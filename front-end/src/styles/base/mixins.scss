@@ -1,0 +1,90 @@
+
+@mixin display-flex () {
+    display: -webkit-box;      
+    display: -moz-box;         
+    display: -ms-flexbox;     
+    display: -webkit-flex;     
+    display: flexbox;
+    display: flex;
+};
+
+@mixin flex-row () {
+    flex-direction:row !important;
+    -webkit-flex-direction: row !important;
+	-webkit-box-orient:horizontal !important;
+};
+
+@mixin flex-row-reverse () {
+    flex-direction:row-reverse !important;
+    -webkit-flex-direction: row-reverse !important;
+};
+
+@mixin flex-column () {
+    flex-direction: column !important;
+    -webkit-flex-direction: column !important;
+	-webkit-box-orient:vertical !important;
+};
+
+@mixin flex-align ($align) {
+    align-items:$align;
+    -webkit-align-items: $align;
+    -webkit-box-align:$align;
+};
+
+@mixin flex-justify ($justify) {
+    justify-content:$justify;
+    -webkit-justify-content:$justify;
+    -webkit-box-pack:$justify;
+};
+
+@mixin flex-size ($size) {
+    flex:$size;
+    -webkit-flex:$size;
+    -webkit-box-flex:$size;
+    -moz-flex: $size;
+	-ms-flex: $size;
+};
+
+@mixin flex-wrap(){
+    flex-wrap: wrap;
+    -webkit-flex-wrap:wrap;
+};
+
+@mixin flex-order($order){
+    order: $order;
+};
+
+@mixin transform ($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -o-transform: $transform;
+    transform: $transform;
+};
+
+@mixin transition-duration ($time) {
+    -webkit-transition-duration: $time;
+    -moz-transition-duration: $time;
+    -o-transition-duration: $time;
+    transition-duration: $time;
+};
+
+@mixin transition-delay ($time) {
+    -webkit-transition-delay: $time;
+    -moz-transition-delay: $time;
+    -o-transition-delay: $time;
+    transition-delay: $time;
+};
+
+@mixin transition-property ($property) {
+    -webkit-transition-property: $property;
+    -moz-transition-property: $property;
+    -o-transition-property: $property;
+    transition-property: $property;
+};
+
+@mixin transition-timing-function($style){
+    -webkit-transition-timing-function: $style;
+    -moz-transition-timing-function: $style;
+    -o-transition-timing-function: $style;
+    transition-timing-function: $style;
+};
